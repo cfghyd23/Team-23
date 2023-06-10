@@ -1,12 +1,13 @@
 import './App.css';
 import Header from './components/Header';
-import Dashboard from './components/Dashboard';
+import Donor from './components/Donor';
 
 function App() {
   return (
     <>
       <Header />
-      <Dashboard />
+      <Donor />
+      {/* <Dashboard /> */}
     </>
   );
 }

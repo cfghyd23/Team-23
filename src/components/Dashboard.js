@@ -1,25 +1,26 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Fuse from 'fuse.js';
 
+const characters = ['a', 'b']
 // For Search
 const searchKeys =  [
     'name',
     'company',
     'species'
-  ]
+]
 
-const fuse = new Fuse(characters, {
-    keys: searchKeys
-  });
-
-
+const headings = [
+    "Option 1",
+    "Option 2",
+    "Option 3"
+]
 
 export default function Dashboard() {
     const [searchRes, setSearchRes] = useState("");
     const searchRef = React.useRef();
     // search results
     const searchHandler = () => {
-        const results = fuse.search('bender');
+    // const results = fuse.search('bender');
         
     }
     
